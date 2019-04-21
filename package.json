@@ -6,5 +6,12 @@
   "repository": "https://github.com/shahzaibkhalid/netlify-lambda-functions.git",
   "author": "Shahzaib Khalid <shahzaibkhalidmalik@outlook.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "netlify-lambda": "^1.4.5"
+  },
+  "scripts": {
+    "start": "netlify-lambda serve src/functions",
+    "build": "netlify-lambda build src/functions"
+  }
 }
