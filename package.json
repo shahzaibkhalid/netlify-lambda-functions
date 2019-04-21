@@ -1,0 +1,10 @@
+{
+  "name": "netlify-lambda-functions",
+  "version": "1.0.0",
+  "description": "Trying out Serverless AWS Lambda on Netlify.",
+  "main": "index.js",
+  "repository": "https://github.com/shahzaibkhalid/netlify-lambda-functions.git",
+  "author": "Shahzaib Khalid <shahzaibkhalidmalik@outlook.com>",
+  "license": "MIT",
+  "private": false
+}
