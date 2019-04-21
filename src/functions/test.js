@@ -1,5 +1,6 @@
 const handler = (event, context, callback) => {
-  const REQUIRED_NAME = 'James';
+  const constants = require('../constants/constants');
+  const REQUIRED_NAME = constants.requiredName;
   const { name } = JSON.parse(event.body);
 
   if (name === REQUIRED_NAME) {
@@ -8,7 +9,7 @@ const handler = (event, context, callback) => {
       body: JSON.stringify({message: `Thanks for visiting us ${name}`})
     });
   }
-  callback(new Error(`You're not James!`));
+  callback(new Error(constants.testError));
 };
 
 module.exports.handler = handler;
